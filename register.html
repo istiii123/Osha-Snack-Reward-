@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daftar - Reward Koin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Daftar Akun</h2>
+  <form id="registerForm">
+    <input type="text" placeholder="Nama Lengkap" required><br>
+    <input type="email" placeholder="Email" required><br>
+    <input type="password" placeholder="Password" required><br>
+    <button type="submit">Daftar</button>
+  </form>
+  <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+
+  <script>
+    document.getElementById("registerForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Berhasil daftar! Silakan login.");
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>
